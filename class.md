@@ -10,7 +10,7 @@
 
 # What can be said about abstract classes?
  + You cannot create an object.
+ + You can create an object.
  + Provides an interface.
- - You can create objects of an abstract class.
  - Does not provide an interface
  + Helps polymorphistic building patterns
