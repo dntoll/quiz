@@ -9,7 +9,7 @@
  - A class
 
 # What can be said about abstract classes?
- + You cannot create an object of an abstract class.
+ + You cannot create an object.
  + Provides an interface
  - You can create objects of an abstract class.
  - Does not provide an interface
