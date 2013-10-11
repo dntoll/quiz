@@ -14,3 +14,7 @@
  + Provides an interface.
  - Does not provide an interface
  + Helps polymorphistic building patterns
+
+# What can be done?
+ - Something
+ - More coding
