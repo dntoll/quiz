@@ -5,7 +5,7 @@
  + An interface
 
 # What is your name?
- T /[a-zA-Z]*/
+ T /[a-z\sA-Z]*/
 
 # What is a Class2?
  - An object
