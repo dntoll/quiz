@@ -5,7 +5,7 @@
  + An interface
 
 # What is your name?
- T /^def/
+ T [a-öA-Ö]*
 
 # What is a Class2?
  - An object
