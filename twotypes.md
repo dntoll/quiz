@@ -5,7 +5,7 @@
  + An interface
 
 # What is your name?
- T Write your name
+ T /^def/
 
 # What is a Class2?
  - An object
@@ -14,4 +14,4 @@
  + An interface
 
 # What is your favourite color?
- T 
+ T /^def/
