@@ -14,4 +14,4 @@
  + An interface
 
 # What is your favourite color?
- T /^def/
+ T /blue/
