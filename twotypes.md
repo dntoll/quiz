@@ -6,11 +6,10 @@
 
 # What is a Class?
 	Fill in all that applies
-	<?php
-	   class Example
-	   {
-	   }
-	?>
+	class Example
+	{
+	}
+
  - An object
  + An abstraction
  + A description of a set of objects
