@@ -9,7 +9,6 @@
 	class Example
 	{
 	}
-
  - An object
  + An abstraction
  + A description of a set of objects
