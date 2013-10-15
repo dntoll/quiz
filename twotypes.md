@@ -1,7 +1,11 @@
+# Regarding Object Oriented Languages
+
 # What is your name?
+Enter your full name eg. John Johnsson
  T /[a-z\sA-ZÅÄÖåäö]{2,50}/
 
 # What is a Class?
+Fill in all that applies
  - An object
  + An abstraction
  + A description of a set of objects
