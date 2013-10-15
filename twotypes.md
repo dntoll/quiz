@@ -2,6 +2,8 @@
 
 # What is your name?
 	Enter your full name eg. John Johnsson
+	It can be Daniel
+	It can be Toll
  T /[a-z\sA-ZÅÄÖåäö]{2,50}/
 
 # What is a Class?
