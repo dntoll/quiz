@@ -2,12 +2,15 @@
 
 # What is your name?
 	Enter your full name eg. John Johnsson
-	It can be Daniel
-	It can be Jenny 
  T /[a-z\sA-ZÅÄÖåäö]{2,50}/
 
 # What is a Class?
 	Fill in all that applies
+	<?php
+	   class Example
+	   {
+	   }
+	?>
  - An object
  + An abstraction
  + A description of a set of objects
