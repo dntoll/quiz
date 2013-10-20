@@ -5,7 +5,7 @@
  - Poo, Heat, and Poo
 
 ## What are valid PHP types
- Only types directly supported by language applies
+	Only types directly supported by language applies
  + Booleans
  + Integers
  + Floating point numbers
