@@ -20,4 +20,5 @@
 	Mark all that applies
  + They are different operators.
  + They produce the same boolean output for $A = true and $B = true
- + 
+ - == also checks type
+ + === also checks type
