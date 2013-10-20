@@ -16,3 +16,8 @@
  - Double
  - URLs
  
+## What is the difference between $A == $B and $A === $B?
+	Mark all that applies
+ + They are different operators.
+ + They produce the same boolean output for $A = true and $B = true
+ + 
