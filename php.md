@@ -25,7 +25,7 @@
 
 ## Validate code
 	Enter code
- E http://localhost:8888/2013secret/quizphpevaluator/test.php
+ E http://localhost:8888/2013secret/quizphpevaluator/validator.php
 	if (mymax(3, 1) != 3) {
 		echo 'false';
 		return;
