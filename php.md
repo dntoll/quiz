@@ -1,3 +1,6 @@
+# PHP Quiz
+	This quiz is about the language PHP.
+
 ## What does "PHP" stand for?
  + Previous name: Personal Home Page
  + PHP: Hypertext Preprocessor
