@@ -47,3 +47,7 @@
 ## Was that fun
  + Yes
  - No
+
+## What is your name?
+	Enter your full name eg. John Johnsson
+ T /[a-z\sA-ZÅÄÖåäö]{2,50}/
