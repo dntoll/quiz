@@ -9,6 +9,9 @@
 	class Example
 	{
 	}
+	http://eofdreams.com/data_images/dreams/image/image-04.jpg
+	http://eofdreams.com/data_images/dreams/image/image-04.jpg
+	http://eofdreams.com/data_images/dreams/image/image-04.jpg
  - An object
  + An abstraction
  + A description of a set of objects
@@ -16,8 +19,8 @@
 
 ## What is an Object?
 	$o = new Exception();
- + A instance of a class http://eofdreams.com/data_images/dreams/image/image-04.jpg
- - A class http://eofdreams.com/data_images/dreams/image/image-04.jpg
+ + A instance of a class 
+ - A class 
 
 ## What can be said about abstract classes?
 	Please check all that applies
