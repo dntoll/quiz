@@ -22,3 +22,32 @@
  + They produce the same boolean output for $A = true and $B = true
  - == also checks type
  + === also checks type
+
+## Validate code
+	Enter code
+ C http://localhost:8888/2013secret/quizphpevaluator/test.php
+ T "
+	if (mymax(3, 1) != 3) {
+		echo 'false';
+		return;
+	}
+	if (mymax(-1, 1) != 1) {
+		echo 'false';
+		return;
+	}
+	if (mymax(1, 3) != 3) {
+		echo 'false';
+		return;
+	}
+	if (mymax(0, 0) != 0) {
+		echo 'false';
+		return;
+	}
+	
+	echo 'true';
+	
+	"
+	
+## Was that fun
+ + Yes
+ - No
