@@ -42,7 +42,6 @@
 		echo 'false';
 		return;
 	}
-	
 	echo 'true';
 
 ## Was that fun
