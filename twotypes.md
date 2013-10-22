@@ -6,7 +6,7 @@
 
 ## What is a Class?
 	Fill in all that applies
-	http://eofdreams.com/data_images/dreams/image/image-04.jpg
+	(http://eofdreams.com/data_images/dreams/image/image-04.jpg)
 	class Example
 	{
 	}
