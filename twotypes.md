@@ -6,7 +6,6 @@
 
 ## What is a Class?
 	Fill in all that applies
-	http://eofdreams.com/data_images/dreams/image/image-04.jpg
 	class Example
 	{
 	}
@@ -17,8 +16,8 @@
 
 ## What is an Object?
 	$o = new Exception();
- + A instance of a class
- - A class
+ + A instance of a class http://eofdreams.com/data_images/dreams/image/image-04.jpg
+ - A class http://eofdreams.com/data_images/dreams/image/image-04.jpg
 
 ## What can be said about abstract classes?
 	Please check all that applies
