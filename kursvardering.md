@@ -36,8 +36,8 @@
  + Ja, på utsatt tid.
 
 ## Har laborationernas instruktioner varit oklara?
- - Nej
- + Ja
+ + Nej
+ - Ja
  
 ## Har du fått hjälp när du bett om det?
  - Nej
