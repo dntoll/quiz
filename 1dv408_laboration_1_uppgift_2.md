@@ -10,6 +10,6 @@
  + Uppfyller Testfallet
  - Uppfyller inte Testfallet
  
-## Testfall 1.1 
+## Testfall 1.1 Övrigt
 	Ange eventuella oklarheter eller avvikelser från testfallet
  T /[a-z\sA-ZÅÄÖåäö]{0,1024}/
