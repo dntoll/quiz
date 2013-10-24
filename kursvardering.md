@@ -25,7 +25,7 @@
 ## Har du lärt dig testning?
 	Genom att arbeta med laborationerna, har du efter genomförd laboration arbetat och lärt dig testa webbapplikationer?
  - Nej
- - Ja
+ + Ja
  
 # Del 2 nivå, instruktioner och hjälp
 
