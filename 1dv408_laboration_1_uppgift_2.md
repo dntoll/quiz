@@ -1,7 +1,7 @@
 # Testrapport av Demoapplikationen
 
-## What is your name?
-	Enter your full name eg. John Johnsson (a-ö)
+## Testarens namn
+	Ange hela ditt namn. Ex. John Johnsson (a-ö, A-Ö)
  T /[a-z\sA-ZÅÄÖåäö]{2,50}/
 
 # Testfall 1.1 Navigera till sidan
