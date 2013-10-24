@@ -1,8 +1,6 @@
 # Kursvärdering för 1DV408 Laborationer
 	Denna kursvärdering gäller laborationskursen i 1DV408. 
 	Kursvärderingen är anonym. 
-	Röd(rosa) betyder nekande svar
-	Grön betyder jakande svar
 
 # Del 1 kunskapsmål 
 	Dessa mål är direkt relaterade till kursplanens mål.
