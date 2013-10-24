@@ -153,3 +153,43 @@
 ## Testfall 3.2 Övrigt
 	Ange eventuella oklarheter eller avvikelser från testfallet
  T /[a-z\sA-ZÅÄÖåäö]{0,1024}/
+
+# Testfall  3.3: Inloggning med hjälp utav kakor
+
+## Testfall 3.3
+ + Uppfyller Testfallet
+ - Uppfyller inte Testfallet
+ 
+## Testfall 3.3 Övrigt
+	Ange eventuella oklarheter eller avvikelser från testfallet
+ T /[a-z\sA-ZÅÄÖåäö]{0,1024}/
+
+# Testfall  3.4: Misslyckad inloggning med manipulerad kaka
+
+## Testfall 3.4
+ + Uppfyller Testfallet
+ - Uppfyller inte Testfallet
+ 
+## Testfall 3.4 Övrigt
+	Ange eventuella oklarheter eller avvikelser från testfallet
+ T /[a-z\sA-ZÅÄÖåäö]{0,1024}/
+
+# Testfall  3.5: Misslyckad inloggning med manipulerad för gammal kaka
+
+## Testfall 3.5
+ + Uppfyller Testfallet
+ - Uppfyller inte Testfallet
+ 
+## Testfall 3.5 Övrigt
+	Ange eventuella oklarheter eller avvikelser från testfallet
+ T /[a-z\sA-ZÅÄÖåäö]{0,1024}/
+
+# Testfall  3.6: Motverka sessionsstölder
+
+## Testfall 3.6
+ + Uppfyller Testfallet
+ - Uppfyller inte Testfallet
+ 
+## Testfall 3.6 Övrigt
+	Ange eventuella oklarheter eller avvikelser från testfallet
+ T /[a-z\sA-ZÅÄÖåäö]{0,1024}/
