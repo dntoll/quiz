@@ -50,8 +50,8 @@
  + -5
  - All positive integers
  - All negative integers
- + A = [-214783648 -> 2,147,483,647]
- + B = [-214783648 -> 2,147,483,647]
+ + A = [-214783648 -> 2,147,483,647] if int is 32 bit
+ + B = [-214783648 -> 2,147,483,647] if int is 32 bit
  
 ## Reliability
 	Check all that applies
@@ -70,4 +70,9 @@
  
 ## Testing activities
 	Check all that applies
- + 
+ - Beta testing is done during coding
+ + Unit testing is done by programmers
+ + Regression testing can be automated
+ + Customers should be involved in testing
+
+
