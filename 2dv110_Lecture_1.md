@@ -50,8 +50,8 @@
  + A = -5 & B = intvalue(4.3);
  - All positive integers
  - All negative integers
- + A can be any number in [-214783648 -> 2,147,483,647] if int is 32 bit
- + B can be any number in [-214783648 -> 2,147,483,647] if int is 32 bit
+ + A can be any number in [-214783648 -> 2147483647] if int is 32 bit
+ + B can be any number in [-214783648 -> 2147483647] if int is 32 bit
  
 ## Reliability and Correctness
 	Check all that apply
