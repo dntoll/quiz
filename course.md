@@ -6,7 +6,7 @@
 
 ## Lecture 1
 	Lecture 1 Quiz
- Q https://github.com/dntoll/quiz/blob/master/2dv110_Lecture_1.md
+ Q https://raw.github.com/dntoll/quiz/master/2dv110_Lecture_1.md
 
 ## What is an Object?
 	$o = new Exception();
