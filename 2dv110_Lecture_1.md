@@ -17,7 +17,7 @@
  + An Omission can be intentional
  + There can be several correct implementations of the same specification
  
-## A bug can be found in
+## A bug or fault can be found in
 	Check all that apply
  + System Under Test
  + Specification
