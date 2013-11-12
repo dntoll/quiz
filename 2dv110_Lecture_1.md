@@ -75,4 +75,19 @@
  + Regression testing can be automated
  + Customers should be involved in testing
 
+## Testing Types
+	Check all that applies
+ + In black box testing we have knowledge of the requirements
+ - In black box testing we have knowledge of the code
+ + In white box testing we have knowledge of the code
+ + In white box testing we have knowledge of the requirements
+ + Interface testing is always black box testing
+ + Model based testing requires a formal model of the requirements
+ - Model based testing requires a formal model of the code
 
+## Oracle
+	Check all that applies
+ + The oracle decides if the output is considered correct
+ + The oracle decides if the output is considered incorrect
+ + Humans can be oracles
+ + Oracles can be constructed from formal models
