@@ -4,10 +4,12 @@
 ## What is the goal of a test plan?
 	Check all that apply
  + Find out what should be tested.
- + All testcases
+ + Contain all requirements that should be tested this iteration
  + Show Risks
  + When will a test run?
  - get better understanding of the problem
+ - to contain test-cases
+ + to produce test-cases
  
 ## What are the levels of the Requirements pyramid
 	Check all that apply
