@@ -14,7 +14,7 @@
  - Vision, Use-Cases, Requirements
  - Needs, Features, Use-cases/Specification, Scenarios
  + Needs, Features, Use-cases/Specification, Scenarios, Test Cases
- + Test-Cases, Use-cases
+ - Test-Cases, Use-cases, Test data
 
 ## How can we derive tests from Use-cases?
 	Check all that apply
@@ -41,7 +41,22 @@
 
 ## What is the problem with exhaustive testing?
  + Takes too much time
- + Gives no new feedback
+ - Gives no extra feedback
  - No problem
  + Not practically possible
+
+## How large is the input domain for the following method
+	//username may only contain [a-zA-Z]
+	//short is 16 bits
+	int findUser(char[8] username, unsigned short userId, boolean searchByUsername)
+ - 256 * 65536 * 2
+ + 52 * 65536 * 2
+ - 52 * 256 * 2
+ - 255 * 65536
+
+
+## Equivalence Partitioning
+ + Two subpartitions may be disjoint
+ - Two subpartitions may include the same item
+ + We can combine several partitions to create usecases
 
