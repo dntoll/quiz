@@ -51,10 +51,10 @@
 	//username may only contain [a-zA-Z]
 	//short is 16 bits
 	int findUser(char[8] username, unsigned short userId, boolean searchByUsername)
- - 256 * 65536 * 2
- + 52 * 65536 * 2
- - 52 * 256 * 2
- - 255 * 65536
+ - 256 * 8 * 65536 * 2
+ + 52 * 8 * 65536 * 2
+ - 52 * 8 * 256 * 2
+ - 255 * 65536 * 8 * 2
 
 
 ## Equivalence Partitioning
