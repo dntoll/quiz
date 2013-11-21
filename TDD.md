@@ -34,17 +34,18 @@
  + A method that throws an exception when it receives false input
  - A mock object
  + A part of the JUnit framework
- + A code coverage tool
+ - A code coverage tool
  
 ## How can exceptions be tested in JUnit4?
 	Check all that apply
  + @Test(expected=Exception.class)
  - by using fail after running a method on the sut class
+ + by using fail after running a method on the sut class inside a try catch block
  
 ## How do we handle hard to test dependencies
  + By using dependency injection
  + By mocking
- - By avoiding dependencies between classes
+ - By avoiding all dependencies between classes
 
 ## Do all tests need assert
  + No
