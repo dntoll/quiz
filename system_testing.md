@@ -39,4 +39,9 @@
  + Compability
  + Compliance
 
- 
+## What is the problem with exhaustive testing?
+ + Takes too much time
+ + Gives no new feedback
+ - No problem
+ + Not practically possible
+
