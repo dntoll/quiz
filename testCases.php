@@ -1,20 +1,24 @@
 function tryArray(array $inputArray, $expectedOutput, $expectedException = false) {
-
+	$errors = 0;
 	for($i = 0; $i < count($inputArray); $i++) {
 		
 
 		try {
 			$actual = mymax($inputArray[0],$inputArray[1],$inputArray[2]);
 			if ($expectedException == false) {
-				if ($actual != $expectedOutput)
+				if ($actual != $expectedOutput) {
 					echo ("wrong output [$actual] for [$inputArray[0],$inputArray[1],$inputArray[2]]should be [$expectedOutput] </br>");
+					$errors++;
+				}
 			} else {
 				echo("wrong output [$actual] for [$inputArray[0],$inputArray[1],$inputArray[2]]should be [Exception]  </br>");
+				$errors++;
 			}
 		} catch (\Exception $e) { 
 			
 			if ($expectedException == false) {
 				echo("wrong output [Exception] for [$inputArray[0],$inputArray[1],$inputArray[2]]should be [$expectedOutput] </br>");
+				$errors++;
 			} else {
 				//OK
 			}
@@ -23,6 +27,10 @@ function tryArray(array $inputArray, $expectedOutput, $expectedException = false
 		$first = array_shift($inputArray);
 		$inputArray[] = $first;
 	}
+	
+	if ($errors > 0)
+		die();
+	return true;
 }
 
 function test() {
