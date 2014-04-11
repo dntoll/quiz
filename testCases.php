@@ -37,8 +37,8 @@ function test() {
 	tryArray($stringInput, 0, true);
 	tryArray($arrayInput, 0, true);
 
-		
+	echo "true";	
 }
 
 test();
-echo "done";
+
