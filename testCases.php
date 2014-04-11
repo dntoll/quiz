@@ -7,7 +7,7 @@ function tryArray(array $inputArray, $expectedOutput, $expectedException = false
 			$actual = mymax($inputArray[0],$inputArray[1],$inputArray[2]);
 			if ($expectedException == false) {
 				if ($actual != $expectedOutput)
-					var_dump ("wrong output [$actual] for [$inputArray[0],$inputArray[1],$inputArray[2]]should be [$expectedOutput] ");
+					echo ("wrong output [$actual] for [$inputArray[0],$inputArray[1],$inputArray[2]]should be [$expectedOutput] ");
 			} else {
 				echo("wrong output [$actual] for [$inputArray[0],$inputArray[1],$inputArray[2]]should be [Exception] ");
 			}
