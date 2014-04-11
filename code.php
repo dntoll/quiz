@@ -30,7 +30,6 @@
 		$stringInput = array("one",2, $expectedOutput);
 		$negativeInput = array(-1,2,$expectedOutput);
 		$arrayInput = array(array(1,2,3),NULL,$expectedOutput);
-
 		tryArray($correctInputs, $expectedOutput, false);
 		tryArray($negativeInput, 0, true);
 		tryArray($stringInput, 0, true);
