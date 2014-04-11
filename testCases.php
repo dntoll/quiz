@@ -6,14 +6,15 @@ function tryArray(array $inputArray, $expectedOutput, $expectedException = false
 		try {
 			$actual = mymax($inputArray[0],$inputArray[1],$inputArray[2]);
 			if ($expectedException == false) {
-				assert($actual == $expectedOutput, "wrong output [$actual] for [$inputArray[0],$inputArray[1],$inputArray[2]]should be [$expectedOutput] ");
+				if ()$actual != $expectedOutput)
+					echo ("wrong output [$actual] for [$inputArray[0],$inputArray[1],$inputArray[2]]should be [$expectedOutput] ");
 			} else {
-				assert(false, "wrong output [$actual] for [$inputArray[0],$inputArray[1],$inputArray[2]]should be [Exception] ");
+				echo("wrong output [$actual] for [$inputArray[0],$inputArray[1],$inputArray[2]]should be [Exception] ");
 			}
 		} catch (\Exception $e) { 
 			
 			if ($expectedException == false) {
-				assert(false, "wrong output [Exception] for [$inputArray[0],$inputArray[1],$inputArray[2]]should be [$expectedOutput]");
+				echo("wrong output [Exception] for [$inputArray[0],$inputArray[1],$inputArray[2]]should be [$expectedOutput]");
 			} else {
 				//OK
 			}
