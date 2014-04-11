@@ -7,14 +7,14 @@ function tryArray(array $inputArray, $expectedOutput, $expectedException = false
 			$actual = mymax($inputArray[0],$inputArray[1],$inputArray[2]);
 			if ($expectedException == false) {
 				if ($actual != $expectedOutput)
-					echo ("wrong output [$actual] for [$inputArray[0],$inputArray[1],$inputArray[2]]should be [$expectedOutput] ");
+					echo ("wrong output [$actual] for [$inputArray[0],$inputArray[1],$inputArray[2]]should be [$expectedOutput] </br>");
 			} else {
-				echo("wrong output [$actual] for [$inputArray[0],$inputArray[1],$inputArray[2]]should be [Exception] ");
+				echo("wrong output [$actual] for [$inputArray[0],$inputArray[1],$inputArray[2]]should be [Exception]  </br>");
 			}
 		} catch (\Exception $e) { 
 			
 			if ($expectedException == false) {
-				echo("wrong output [Exception] for [$inputArray[0],$inputArray[1],$inputArray[2]]should be [$expectedOutput]");
+				echo("wrong output [Exception] for [$inputArray[0],$inputArray[1],$inputArray[2]]should be [$expectedOutput] </br>");
 			} else {
 				//OK
 			}
