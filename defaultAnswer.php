@@ -1,6 +1,6 @@
 <?php
 /**
- * max() returns the largest value of its three inputs
+ * mymax() returns the largest value of its three inputs
  * 
  * If input is less than zero an exception should be thrown.
  *
@@ -14,7 +14,7 @@
  * 
  * @return integer 
  */
-function max($numberOne, $numberTwo, $numberThree) {
+function mymax($numberOne, $numberTwo, $numberThree) {
 	if (!is_numeric($numberOne) || !is_numeric($numberTwo) || !is_numeric($numberThree))
 		throw new \Exception("Input must be numeric");
 
