@@ -4,7 +4,7 @@ function tryArray(array $inputArray, $expectedOutput, $expectedException = false
 		
 
 		try {
-			$actual = max($inputArray[0],$inputArray[1],$inputArray[2]);
+			$actual = mymax($inputArray[0],$inputArray[1],$inputArray[2]);
 			if ($expectedException == false) {
 				assert($actual == $expectedOutput, "wrong output [$actual] for [$inputArray[0],$inputArray[1],$inputArray[2]]should be [$expectedOutput] ");
 			} else {
