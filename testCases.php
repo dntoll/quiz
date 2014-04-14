@@ -8,17 +8,17 @@ function tryArray(array $inputArray, $expectedOutput, $expectedException = false
 			$actual = mymax($inputArray[0],$inputArray[1],$inputArray[2]);
 			if ($expectedException == false) {
 				if ($actual != $expectedOutput) {
-					throw new \Exception ("wrong output [$actual] for [$inputArray[0], $inputArray[1], $inputArray[2] should be [$expectedOutput]");
+					throw new \Exception ("wrong output [$actual] for [$inputArray[0], $inputArray[1], $inputArray[2]] should be [$expectedOutput]");
 					$errors++;
 				}
 			} else {
-				throw new \Exception ("wrong output [$actual] for [$inputArray[0], $inputArray[1], $inputArray[2] should be [Exception]");
+				throw new \Exception ("wrong output [$actual] for [$inputArray[0], $inputArray[1], $inputArray[2]] should be [Exception]");
 				$errors++;
 			}
 		} catch (\Exception $e) { 
 			
 			if ($expectedException == false) {
-				throw new \Exception ("wrong output [Exception] for [$inputArray[0], $inputArray[1], $inputArray[2] should be [$expectedOutput]");
+				throw new \Exception ("wrong output [Exception] for [$inputArray[0], $inputArray[1], $inputArray[2]] should be [$expectedOutput]");
 				$errors++;
 			} else {
 				//OK
