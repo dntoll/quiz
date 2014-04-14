@@ -1,8 +1,2 @@
-<?php
 
-
-?>
-Hello
-
-<?php
- 	echo "world";
+echo "Hello world";												
