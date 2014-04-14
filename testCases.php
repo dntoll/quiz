@@ -1,6 +1,7 @@
 <?php
 function tryArray(array $inputArray, $expectedOutput, $expectedException = false) {
 	$errors = 0;
+	$errorString = "";
 	for($i = 0; $i < count($inputArray); $i++) {
 		
 
@@ -8,17 +9,17 @@ function tryArray(array $inputArray, $expectedOutput, $expectedException = false
 			$actual = mymax($inputArray[0],$inputArray[1],$inputArray[2]);
 			if ($expectedException == false) {
 				if ($actual != $expectedOutput) {
-					throw new \Exception ("wrong output [$actual] for [$inputArray[0], $inputArray[1], $inputArray[2]] should be [$expectedOutput]");
+					$errorString .= ("wrong output [$actual] for [$inputArray[0], $inputArray[1], $inputArray[2]] should be [$expectedOutput]\n");
 					$errors++;
 				}
 			} else {
-				throw new \Exception ("wrong output [$actual] for [$inputArray[0], $inputArray[1], $inputArray[2]] should be [Exception]");
+				$errorString .= ("wrong output [$actual] for [$inputArray[0], $inputArray[1], $inputArray[2]] should be [Exception]\n");
 				$errors++;
 			}
 		} catch (\Exception $e) { 
 			
 			if ($expectedException == false) {
-				throw new \Exception ("wrong output [Exception] for [$inputArray[0], $inputArray[1], $inputArray[2]] should be [$expectedOutput]");
+				throw new \Exception ("wrong output [Exception] for [$inputArray[0], $inputArray[1], $inputArray[2]] should be [$expectedOutput]\n");
 				$errors++;
 			} else {
 				//OK
@@ -29,8 +30,11 @@ function tryArray(array $inputArray, $expectedOutput, $expectedException = false
 		$inputArray[] = $first;
 	}
 	
-	if ($errors > 0)
+	if ($errors > 0) {
+		throw new \Exception($errorString);
+	
 		die();
+	}
 	return true;
 }
 
