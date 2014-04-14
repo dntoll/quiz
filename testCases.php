@@ -1,3 +1,4 @@
+<?php
 function tryArray(array $inputArray, $expectedOutput, $expectedException = false) {
 	$errors = 0;
 	for($i = 0; $i < count($inputArray); $i++) {
