@@ -5,7 +5,7 @@ function tryArray(array $inputArray, $expectedOutput, $expectedException = false
 	for($i = 0; $i < count($inputArray); $i++) {
 		
 
-		try {
+	//	try {
 			$actual = mymax($inputArray[0],$inputArray[1],$inputArray[2]);
 			if ($expectedException == false) {
 				if ($actual != $expectedOutput) {
