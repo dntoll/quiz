@@ -21,7 +21,7 @@ function getTotal(array $inputs) {
 		if ($value < 0) {
 			throw new \Exception("Input must be larger than 0");
 		}
-		$ret += $value;
+		$ret = $value;
 	}
 	return $ret;
 }
