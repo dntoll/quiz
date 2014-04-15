@@ -11,7 +11,7 @@ function test() {
 
 	$actual = getTotal($correctInputs);
 	if ($actual != 4+0) {
-		throw new \Exception("Wrong output $actual ");
+		throw new \Exception("Wrong output $actual for $correctInputs[0], $correctInputs[1], $correctInputs[2]");
 	}
 
 
