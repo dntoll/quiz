@@ -24,7 +24,7 @@ if (isset($codeOutput) == false) {
 }
 
 if ($codeOutput != $expectedOutput) {
-	//var_dump($codeOutput);
-	//var_dump($expectedOutput);
+	var_dump($codeOutput);
+	var_dump($expectedOutput);
 	throw new \Exception("output was [$codeOutput] from program should output [$expectedOutput]");
 }
