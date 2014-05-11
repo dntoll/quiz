@@ -10,7 +10,7 @@ $pl->add(new \model\Product("Banana", 1.5));
 $pl->add(new \model\Product("Orange", 2.5));
 $pl->add(new \model\Product("Apple", 3.5));
 
-$pv = new \model\ProductView($pl);
+$pv = new \view\ProductView($pl);
 
 $pv->show();
 
@@ -76,7 +76,6 @@ class ProductList implements \IteratorAggregate {
     }
 }
 
-?>
 [FILEBREAK]<?php
 
 namespace view;
