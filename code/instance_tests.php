@@ -6,7 +6,7 @@ if (isset($codeOutput) == false) {
 	throw new \Exception("no output from program should output $expectedOutput");
 }
 
-if ($codeOutput != "expectedOutput") {
+if ($codeOutput != $expectedOutput) {
 	//var_dump($codeOutput);
 	//var_dump($expectedOutput);
 	throw new \Exception("output was [$codeOutput] from program should output [$expectedOutput]");
