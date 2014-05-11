@@ -13,9 +13,9 @@ $pv->show();*/
 $expectedOutput = "<h3>A List of products</h3>
 <p>Number of products 3 </p>
 <ul>
-	<li>Product <strong>Banana</strong> 1.5 sek </li>
-	<li>Product <strong>Orange</strong> 2.5 sek </li>
-	<li>Product <strong>Apple</strong> 3.5 sek </li>
+	<li>Product: <strong>Banana</strong> Price: 1.5 sek</li>
+	<li>Product: <strong>Orange</strong> Price: 2.5 sek</li>
+	<li>Product: <strong>Apple</strong> Price: 3.5 sek</li>
 </ul>
 <p>Total Price: 7.5sek</p>";
 
