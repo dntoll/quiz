@@ -99,19 +99,19 @@ class ProductView {
 	}
 
 	public function show() {
-		echo "<h3>A List of products</h3>";
-		echo "<p>Number of products " . $this->productList->getCount() . " </p>";
+		echo "<h3>A List of products</h3>\n";
+		echo "<p>Number of products " . $this->productList->getCount() . " </p>\n";
 
-		echo "<ul>";
+		echo "<ul>\n";
 		foreach ($this->productList as $product) {
 			$this->showProduct($product);
 		}
-		echo "</ul>";
+		echo "</ul>\n";
 
 		echo "<p>Total Price: " . $this->productList->getTotalPrice() .  "sek</p>";
 	}
 
 	private function showProduct(\model\Product $toShow) {
-		echo "<li>" . $toShow->getTitle() . " " . $toShow->getPrice() ." sek </li>";
+		echo "\t<li>" . $toShow->getTitle() . " " . $toShow->getPrice() ." sek </li>\n";
 	}
 }
