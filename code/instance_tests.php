@@ -7,5 +7,5 @@ if (isset($codeOutput) == false) {
 }
 
 if ($codeOutput != "Hello World") {
-	throw new \Exception("output was [$codeOutput] from program should output [$expectedOutput]");}
+	throw new \Exception("output was [$codeOutput] from program should output [$expectedOutput]");
 }
