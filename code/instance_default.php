@@ -91,8 +91,12 @@ class ProductView {
 	}
 
 	public function show() {
+
+		$count = $this->productList->getCount();
+		$totalPrice = $this->productList->getTotalPrice();
+
 		echo "<h3>A List of products</h3>\n";
-		echo "<p>Number of products " . $this->productList->getCount() . " </p>\n";
+		echo "<p>Number of products: $count </p>\n";
 
 		echo "<ul>\n";
 		foreach ($this->productList as $product) {
@@ -100,10 +104,13 @@ class ProductView {
 		}
 		echo "</ul>\n";
 
-		echo "<p>Total Price: " . $this->productList->getTotalPrice() .  "sek</p>";
+		echo "<p>Total Price: $totalPrice sek</p>";
 	}
 
 	private function showProduct(\model\Product $toShow) {
-		echo "\t<li>" . $toShow->getTitle() . " " . $toShow->getPrice() ." sek </li>\n";
+
+		$title = $toShow->getTitle();
+		$price = $toShow->getPrice();
+		echo "\t<li>Product: <strong>$title</strong> Price: $price sek</li>\n";
 	}
 }
