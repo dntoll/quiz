@@ -1,11 +1,22 @@
 <?php
+require_once("1.php"); //Product
+require_once("2.php"); //ProductList
+require_once("3.php"); //ProductView
 
-	namespace model;
+//Write your code here
 
-?>
+$pl = new \model\ProductList();
+$pl->add(new \model\Product("Banana", 1.5));
+$pl->add(new \model\Product("Orange", 2.5));
+$pl->add(new \model\Product("Apple", 3.5));
+
+$pv = new \model\ProductView($pl);
+
+$pv->show();
+
 [FILEBREAK]<?php
 
-
+namespace model;
 
 class Product {
 	private $title;
@@ -31,10 +42,10 @@ class Product {
 	}
 }
 
-?>
+
 [FILEBREAK]<?php
 
-//namespace model;
+namespace model;
 
 class ProductList implements \IteratorAggregate {
 
@@ -68,7 +79,7 @@ class ProductList implements \IteratorAggregate {
 ?>
 [FILEBREAK]<?php
 
-//namespace view;
+namespace view;
 
 class ProductView {
 
@@ -95,15 +106,3 @@ class ProductView {
 		echo "<li>" . $toShow->getTitle() . " " . $toShow->getPrice() ." sek </li>";
 	}
 }
-
-?>
-[FILEBREAK]<?php
-
-$pl = new \model\ProductList();
-$pl->add(new \model\Product("Banana", 1.5));
-$pl->add(new \model\Product("Orange", 2.5));
-$pl->add(new \model\Product("Apple", 3.5));
-
-$pv = new \model\ProductView($pl);
-
-$pv->show();
