@@ -15,14 +15,6 @@ Apple 3.5 sek
 
 //Write your code here
 
-$pl = new \model\ProductList();
-$pl->add(new \model\Product("Banana", 1.5));
-$pl->add(new \model\Product("Orange", 2.5));
-$pl->add(new \model\Product("Apple", 3.5));
-
-$pv = new \view\ProductView($pl);
-
-$pv->show();
 
 [FILEBREAK]<?php
 
