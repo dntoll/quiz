@@ -3,6 +3,16 @@ require_once("1.php"); //Product
 require_once("2.php"); //ProductList
 require_once("3.php"); //ProductView
 
+/*
+Use the defined classes to show a list of products
+Use the prices and names from this pricelist
+Price List:
+Banana 1.5 sek 
+Orange 2.5 sek
+Apple 3.5 sek 
+
+*/
+
 //Write your code here
 
 $pl = new \model\ProductList();
