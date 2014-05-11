@@ -7,5 +7,7 @@ if (isset($codeOutput) == false) {
 }
 
 if ($codeOutput != "Hello World") {
+	var_dump($codeOutput);
+	var_dump($expectedOutput);
 	throw new \Exception("output was [$codeOutput] from program should output [$expectedOutput]");
 }
