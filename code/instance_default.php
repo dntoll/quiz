@@ -1,7 +1,7 @@
 <?php
-require_once("1.php"); //Product
-require_once("2.php"); //ProductList
-require_once("3.php"); //ProductView
+require_once("Product.php"); 
+require_once("ProductList.php"); 
+require_once("ProductView.php"); 
 
 /*
 Use the defined classes to show a list of products
@@ -144,7 +144,7 @@ namespace view;
 
 
 /**
- * The ProductView class creates HTML output from an \model\ProductList 
+ * The ProductView creates HTML output from an \model\ProductList 
  */
 class ProductView {
 
