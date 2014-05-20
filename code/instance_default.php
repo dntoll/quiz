@@ -1,5 +1,6 @@
 <?php
 require_once("Product.php"); 
+require_once("Category.php"); 
 require_once("ProductList.php"); 
 require_once("ProductView.php"); 
 
