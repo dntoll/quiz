@@ -7,9 +7,9 @@ require_once("ProductView.php");
 Use the defined classes to show a list of products
 Use the prices and names from this pricelist
 Price List:
-Banana 1.5 sek 
-Orange 2.5 sek
-Apple 3.5 sek 
+Product: Banana, Price: 10.5 sek, Category: Fruit, Tax: (0.15)
+Product: Cucumber, Price: 15.5 sek, Category: Vegetables, Tax: (0.16)
+Product: Frozen Pizza, Price: 49.0 sek, Category: Food, Tax: (0.30)
 */
 
 //Write your code here
@@ -72,11 +72,40 @@ class Product {
 	}
 }
 
-
 [FILEBREAK]<?php
 
 namespace model;
 
+
+class Category {
+	private $title;
+
+	private $taxPercent;
+
+	public function __construct($title, $taxPercent) {
+		if (is_string($title) === FALSE || strlen($title) < 1)
+			throw new \Exception("Category title must be of string type with length > 0");
+
+		if (is_numeric($taxPercent) === FALSE || floatval($taxPercent) < 0)
+			throw new \Excpetion("Category taxPercent must be numeric type and larger than 0 ");
+
+		$this->title = $title;
+		$this->taxPercent = $taxPercent;
+	}
+
+	public function getTitle() {
+		return $this->title;
+	}
+
+	public function getTaxPercent() {
+		return $this->taxPercent;
+	}
+}
+
+
+[FILEBREAK]<?php
+
+namespace model;
 
 /**
 * A List of Products 
@@ -85,7 +114,7 @@ namespace model;
 class ProductList implements \IteratorAggregate {
 
 	/**
-	 * @var array of \model\Product
+	 * @var array of array (\model\Product, \model\Category)
 	 */
 	private $products;
 
@@ -101,8 +130,8 @@ class ProductList implements \IteratorAggregate {
 	 * 
 	 * @param Product $toBeAdded
 	 */
-	public function add(Product $toBeAdded) {
-		$this->products[] = $toBeAdded;
+	public function add(Product $toBeAdded, Category $category) {
+		$this->products[] = array($toBeAdded, $category);
 	}
 
 	/**
@@ -131,8 +160,11 @@ class ProductList implements \IteratorAggregate {
      */
     public function getTotalPrice() {
     	$total = 0;
-		foreach ($this->products as $product) {
-			$total += $product->getPrice();
+		foreach ($this->products as $productWithCategory) {
+			$product = $productWithCategory[0];
+			$category = $productWithCategory[1];
+
+			$total += $product->getPrice() + $category->getTaxPercent() * $product->getPrice();
 		}
 		return $total;
     }
@@ -178,8 +210,11 @@ class ProductView {
 		echo "<p>Number of products: $count </p>\n";
 
 		echo "<ul>\n";
-		foreach ($this->productList as $product) {
-			$this->showProduct($product);
+		foreach ($this->productList as $productWithCategory) {
+			$product = $productWithCategory[0];
+			$category = $productWithCategory[1];
+
+			$this->showProduct($product, $category);
 		}
 		echo "</ul>\n";
 
@@ -194,10 +229,13 @@ class ProductView {
 	 * @param  \model\Product $toShow
 	 * @return void
 	 */
-	private function showProduct(\model\Product $toShow) {
+	private function showProduct(\model\Product $toShow, \model\Category $productCategory) {
 
 		$title = $toShow->getTitle();
 		$price = $toShow->getPrice();
-		echo "\t<li>Product: <strong>$title</strong> Price: $price sek</li>\n";
+		$category = $productCategory->getTitle();
+		$tax = $productCategory->getTaxPercent() * $toShow->getPrice();
+
+		echo "\t<li>$category: <strong>$title</strong> Price: $price sek Tax $tax</li>\n";
 	}
 }

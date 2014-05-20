@@ -3,10 +3,20 @@
 ob_start();
 ob_implicit_flush(false); 
 
+
+/*
+Use the defined classes to show a list of products
+Use the prices and names from this pricelist
+Price List:
+Product: Banana, Price: 10.5 sek, Category: Fruit, Tax: (0.15)
+Product: Cucumber, Price: 15.5 sek, Category: Vegetables, Tax: (0.16)
+Product: Frozen Pizza, Price: 49.0 sek, Category: Food, Tax: (0.30)
+*/
+
 $pl = new \model\ProductList();
-$pl->add(new \model\Product("Banana", 1.5));
-$pl->add(new \model\Product("Orange", 2.5));
-$pl->add(new \model\Product("Apple", 3.5));
+$pl->add(new \model\Product("Banana", 10.5), new \model\Category("Fruit", 0.15));
+$pl->add(new \model\Product("Cucumber", 15.5), new \model\Category("Vegetables", 0.16));
+$pl->add(new \model\Product("Frozen Pizza", 49.0), new \model\Category("Food", 0.30));
 
 $pv = new \view\ProductView($pl);
 
