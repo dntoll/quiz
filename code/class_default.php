@@ -9,6 +9,8 @@ $body = "My HTML body";
 
 [FILEBREAK]<?php
 
+namespace view;
+
 class HTMLPageView {
 
 	private $title;
