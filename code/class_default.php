@@ -1,5 +1,6 @@
 <?php
 
+require_once("HTMLPageView.php");
 
 $view = new HTMLPageView("foo", "boody");
 
@@ -22,7 +23,7 @@ class HTMLPageView {
 		<!DOCTYPE html>
 		<html>
 			<head>
-			<meta charset="utf-8">
+			<meta charset='utf-8'>
 			<title>$this->title</title>
 			</head>
 			<body>
