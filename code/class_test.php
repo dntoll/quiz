@@ -3,7 +3,7 @@
 
 ob_start();
 ob_implicit_flush(false); 
-$view = new HTMLPageView($title, $body);
+$view = new \view\HTMLPageView($title, $body);
 $view->echoHTML();
 $expectedOutput = ob_get_contents();
 ob_clean();
