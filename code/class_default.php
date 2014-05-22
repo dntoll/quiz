@@ -1,9 +1,10 @@
 <?php
 
+$title = "My HTML title";
+$body = "My HTML body";
+
 require_once("HTMLPageView.php");
-
-$view = new HTMLPageView("foo", "boody");
-
+$view = new HTMLPageView($title, $body);
 $view->echoHTML();
 
 [FILEBREAK]<?php
