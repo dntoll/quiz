@@ -1,11 +1,11 @@
 <?php
 
+//keep these variables!
 $title = "My HTML title";
 $body = "My HTML body";
 
-require_once("HTMLPageView.php");
-$view = new HTMLPageView($title, $body);
-$view->echoHTML();
+//write your code here_
+
 
 [FILEBREAK]<?php
 
