@@ -1,13 +1,11 @@
 # PHP Classes
 
 ## Code
-	Use the defined class view to output a HTML page : 
-
-	You need to include the HTMLPageView class by using the "require_once" method 
+	Use the defined class view to output a HTML page : \n
+	You need to include the HTMLPageView class by using the "require_once" method \n 
 	Example:
 	require_once("FileName.php");
-
-	You create an instance of a class using the "new" operator 
+	You create an instance of a class using the "new" operator \n
 	Example:
 	$object = new namespace\classname($constructorParameters);
 E http://127.0.0.1:8888/validator.php
