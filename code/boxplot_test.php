@@ -14,7 +14,8 @@ Product: Frozen Pizza, Price: 49.0 sek, Category: Food, Tax: (0.30)
 */
 
 $datag = new RandomDataGenerator(7);
-$canvas = new \view\CanvasStrategy($imageWidth, $imageHeight);
+$canvas = new \view\CanvasStrategy();
+$canvas->setup($imageWidth, $imageHeight);
 $boxPlot = new \view\BoxPlot($canvas);
 $boxPlot->draw($datag->generateRandomData(7) );
 $canvas->writeToOB();
