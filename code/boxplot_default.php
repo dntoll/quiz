@@ -20,7 +20,6 @@ $imageHeight = 256;
 $svgRandomSeed = 8;
 $canvasRandomSeed = 7;
 
-//Write your code here
 
 [FILEBREAK]<?php
 
@@ -451,7 +450,7 @@ class SVGStrategy implements RenderStrategy {
 	public function toOutputBuffer() {
 		echo "
 		
-		  $this->content;
+		  $this->content
 		</svg>
 		";
 	}
@@ -468,7 +467,7 @@ class RandomDataGenerator {
 		$this->randomSeed = $randomSeed;
 	}
 
-	public function generateRandomData($randomSeed) {
+	public function generateRandomData() {
 		srand($this->randomSeed);
 
 		$data = new \model\DataSet();
@@ -552,14 +551,16 @@ class CanvasStrategy implements RenderStrategy {
 	private $height;
 	private $javascript; 
 
-	public function __construct($width, $height) {
+	public function __construct() {
+		$this->javascript = "";
+	}
+
+	public function setup($width, $height) {
 		if ($width <= 0 || $height <= 0)
 			throw new \Exception("Image width and height must be larger than 0");
 
 		$this->width = $width;
 		$this->height = $height;
-
-		$this->javascript = "";
 	}
 
 	public function getWidth() {
