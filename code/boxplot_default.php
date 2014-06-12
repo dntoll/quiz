@@ -83,17 +83,20 @@ class BoxPlot {
 
 		$numIndications = $height / $spaceBetweenIndications;
 
-		//draw vertical lines starting with lowest Value
-		$i = 0;
-		while (true) {
-			$value = intval($lowestValue) + $i * intval($range / $numIndications); 
-			if ($value > $lowestValue + $range)
-				break;
+		if ($numIndications > 0) {
 
-			$ypos = $cam->toImagePos($value);
-			$this->renderer->drawLine($leftSpace, $ypos, $leftSpace + 10, $ypos);
-			$this->renderer->drawText(0, $ypos+5, $value);
-			$i++;
+			//draw vertical lines starting with lowest Value
+			$i = 0;
+			while (true) {
+				$value = intval($lowestValue) + $i * intval($range / $numIndications); 
+				if ($value > $lowestValue + $range)
+					break;
+
+				$ypos = $cam->toImagePos($value);
+				$this->renderer->drawLine($leftSpace, $ypos, $leftSpace + 10, $ypos);
+				$this->renderer->drawText(0, $ypos+5, $value);
+				$i++;
+			}
 		}
 	}
 
