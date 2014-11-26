@@ -18,6 +18,7 @@
  + A list of risks that could affect testing
  + A due end date.
  + Specification on what kinds of testing we are to conduct.
+ + Specification of who should recieve the test report
 
 ## What parts does a test-case consists of
 + Input
