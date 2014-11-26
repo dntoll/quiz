@@ -1,5 +1,5 @@
 # Lecture. System Testing
-	This quiz is intended to test you on the content of the lecture on TDD
+	This quiz is intended to test you on the content of the lecture on System test
 
 ## What is the goal of a test plan?
 	Check all that apply
@@ -17,6 +17,24 @@
  + A list of risks that could affect testing
  + A due end date.
  + Specification on what kinds of testing we are to conduct.
+
+## What parts does a test-case consists of
++ Input
+- detailed information about the requirement tested
++ Traceability to use-case
++ Expected output
++ Preconditions
+
+## Manual test-cases...
++ ... can be automated
+- ... has always unambigous interpretations
+- ... always tests a system as a whole
+ 
+## Reproducibility is
+- the ability to rerun a test case with the same output, every time
+- the ability to rerun a test case with the same output, some of the time
++ the ability to rerun a test case with the same outcome, all the time
+
  
 ## What are the levels of the Requirements pyramid
 	Check all that apply
@@ -36,6 +54,13 @@
 - Traceability is testing of a non functional requirement
 + the ability to remove invalid test-cases when a requirement is changed.
 
+## Traceability, How can we achieve it?
++ By naming convention (name, number) of the use cases and test cases
++ By a test matrix, showing dependencies
+- By making sure we have a limited input domain
+- By testing functional requirements
+- by doing compatibility testing
+
 ## How can we derive tests from Use-cases?
 	Check all that apply
  + Only test main success scenario
@@ -43,13 +68,6 @@
  + Randomly create scenarios from a use-case activity diagram
  + Make sure all paths are covered in the use-case activity diagram
  + Minimize the duplicate paths taken in the use-case activity diagram
-
-## Traceability, How can we achieve it?
-+ By naming convention (name, number) of the use cases and test cases
-+ By a test matrix, showing dependencies
-- By making sure we have a limited input domain
-- By testing functional requirements
-- by doing compatibility testing
 
 ## Why do we need traceability?
  + To verify all requirements are covered.
@@ -89,12 +107,14 @@
  + No
  - Yes
 
+
 ## What are the advantages of exploratory testing?
 + ET tests tests the system as it is not intended to be used.
 + ET avoids the saturation effect by introducing new ways of testing.
 + In ET you deduct new tests from the experience of previous tests
 - We can review the tests in advance.
 - Can easily be reproduced.
++ Exploratory testing builds domain knowledge 
 
 ## What is the problem with exhaustive testing?
  + Takes too much time
@@ -111,10 +131,10 @@
  - 52 * 8 * 256 * 2
  - 255 * 65536 * 8 * 2
 
-
 ## Equivalence Partitioning
  + Two subpartitions may be disjoint
  - Two subpartitions may include the same item
+ + Partitioning may be done by black box or whitebox 
  + We can combine several partitions to create usecases
 
 ## What is regression testing?
