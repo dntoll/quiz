@@ -6,7 +6,8 @@
  + Find out what should be tested.
  + Specify all requirements that should be tested this iteration
  + Show Risks
- + When will a test run?
+ + Specify when a test will be run
+ + Specify who does what
  - get better understanding of the problem
  - to contain test-cases
  + to produce test-cases
