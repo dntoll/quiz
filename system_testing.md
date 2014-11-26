@@ -4,7 +4,7 @@
 ## What is the goal of a test plan?
 	Check all that apply
  + Find out what should be tested.
- + Contain all requirements that should be tested this iteration
+ + Specify all requirements that should be tested this iteration
  + Show Risks
  + When will a test run?
  - get better understanding of the problem
