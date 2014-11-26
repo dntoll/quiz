@@ -17,7 +17,7 @@
  - Vision, Use-Cases, Requirements
  - Needs, Features, Use-cases/Specification, Scenarios
  + Needs, Features, Use-cases/Specification, Scenarios, Test Cases
- + Needs, Features, Use-cases/Specification, Scenarios, Test Cases, Test Data
+ - Needs, Features, Use-cases/Specification, Scenarios, Test Cases, Test Data
  - Test-Cases, Use-cases, Test data
 
 ## How can we derive tests from Use-cases?
